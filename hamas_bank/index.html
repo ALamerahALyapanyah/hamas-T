@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Transfer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Money Transfer</h2>
+
+    <form action="transfer.php" method="POST">
+        <label>From Account ID</label>
+        <input type="number" name="from_account" required>
+
+        <label>To Account ID</label>
+        <input type="number" name="to_account" required>
+
+        <label>Amount</label>
+        <input type="number" name="amount" step="0.01" required>
+
+        <button type="submit">Transfer</button>
+    </form>
+</div>
+
+</body>
+</html>
